@@ -1,0 +1,31 @@
+/*
+ * @author misol <misol@korea.ac.kr>
+ * @brief  유투브 비디오 검색 컴포넌트의 CSS파일
+ * Copyright (c) 2009, misol(김민수) <misol@korea.ac.kr>
+ */
+@charset "UTF-8";
+h1 {font-size:20px;}
+#popHeadder, #popupBody { margin:13px; }
+.search { border:1px solid #DDDDDD; padding:5px; }
+#query { width:200px; }
+#soo_result_info { color:#555555; height:30px; float: left; width:350px; text-align: right; }
+
+#results { margin-top:1em; clear:both; overflow:auto; width:710px; }
+#result_list_layer { color:#555555; margin-top:15px; clear:both; height:400px; width:350px; overflow-x:hidden; overflow-y:scroll; float:left; }
+#result_view_layer { color:#555555; margin-top:15px; margin-left:5px; width:350px; height:400px; float:left; overflow:hidden; }
+#option_select { color:#555555; margin-top:10px; float:left; width:350px; }
+#option_select>select {float:left;}
+.result_list_box a { color:#777777; font-weight:bold; }
+.result_images {float:left; margin:0px 5px 0px 0px; }
+.result_layer {float: left; border-style: dotted; border-width:0px 0px 1px 0px; width:320px; overflow:auto; padding:5px;}
+.result_layer_cannotuse { float: left; border-style: dotted; border-width: 1px; width:320px; overflow:auto; padding:5px; background:#000; opacity:.3; filter:alpha(opacity:30);}
+.item_controller, .full_title, .preview_full_title { display:none; }
+.cut_title, .preview_cut_title { display:inline; }
+.preview_controller { text-align:right; }
+.item_infolist, .preview_item_infolist { display:block; list-style:none; float:left; margin:0px; padding:0px; }
+.preview_item_infolist {height:60px; width:100% ; overflow-y:auto; }
+.item_infolist .tag { width:160px;}
+.preview_video_link, .insert_video_link, .insert_link_link { margin-right:5px; }
+.pagebtn { margin:0px 3px; }
+#size_select { display:block; float:left; margin-right:3px; }
+#bottom_info { display:block; }

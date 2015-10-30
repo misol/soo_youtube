@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<component version="0.2">
+  <title xml:lang="ko">미솔's 비디오 검색 글쓰기 도구</title>
+  <title xml:lang="en">misol's Video Search Component</title>
+  <title xml:lang="zh-TW">Youtube影片搜尋元件</title>
+  <version>0.5.1</version>
+  <date>2012-08-17</date>
+  <link>http://www.imsoo.net</link>
+  <description xml:lang="ko">검색된 동영상을 삽입합니다.</description>
+  <description xml:lang="en">You can insert Videos.</description>
+  <description xml:lang="zh-TW">可插入 Youtube 影片。</description>
+  <author email_address="misol@korea.ac.kr" link="https://twitter.com/misol221">
+    <name xml:lang="ko">misol</name>
+    <name xml:lang="en">misol</name>
+    <name xml:lang="zh-TW">misol</name>
+  </author>
+  <author>
+    <name xml:lang="ko">royallin</name>
+    <name xml:lang="en">royallin</name>
+    <name xml:lang="zh-TW">royallin</name>
+  </author>
+  <extra_vars>
+    <var name="soo_display">
+      <title xml:lang="ko">목록수</title>
+      <title xml:lang="en">the number of items</title>
+      <title xml:lang="zh-TW">項目數量</title>
+      <description xml:lang="ko">1에서 50사이의 수를 입력해주세요.</description>
+      <description xml:lang="en">Enter the number between 1 and 50.</description>
+      <description xml:lang="zh-TW">請輸入數字 1~50 之間。</description>
+    </var>
+    <var name="soo_daum_api_key">
+      <title xml:lang="ko">다음 API KEY (선택사항)</title>
+      <title xml:lang="en">Daum API KEY (Optional)</title>
+      <title xml:lang="zh-TW">Daum API KEY (Optional)</title>
+      <description xml:lang="ko">다음 TV팟을 이용하려면 검색 API키를 입력합니다. API키는 http://dna.daum.net/ 에서 받을 수 있습니다.</description>
+      <description xml:lang="en">If you want to use Daum TV-pot video, insert here Daum Search API key. (This Option is not required. You can get the key on http://dna.daum.net/ )</description>
+      <description xml:lang="zh-TW">如果想要使用 Daum TV-pot 影片，在此插入 Daum API key 來使用此功能。(非必要選項。可到此連結 http://dna.daum.net/ 取得 key 再輸入。)</description>
+    </var>
+  </extra_vars>
+</component>

@@ -1,0 +1,38 @@
+/*
+ * @author Habile
+ * @brief  유투브 비디오 검색 컴포넌트의 CSS파일
+ * Copyright (c) 2009, Habile ( http://www.habile.kr/ )
+ */
+@charset "UTF-8";
+
+
+#popup_content { width:820px; }
+#popHeadder, #popupBody { margin:13px; }
+.search {  border:1px solid #DDDDDD; padding:5px; }
+#query { width:200px; }
+#soo_result_info { color:#555555; height:30px; width:610px; text-align: left; }
+
+#results { margin-top:1em; clear:both; height:auto; width:782px; }
+#result_list_layer { color:#555555; margin-top:1em; padding-bottom:10px; clear:both; height:180px; width:auto; overflow-y:auto; overflow-x:hidden;}
+#result_view_layer { color:#555555; margin:10px 0 0 0; width:750px; height:auto; float:left; }
+#option_select { position:relative; z-index:2; color:#555555; margin-top:10px; float:left; }
+.result_list_box { position:relative; border:1px solid #555555; padding:5px; background-color:#fafafa; }
+.result_list_box a { display:inline; overflow:hidden; color:#777777; }
+.result_images {position:relative; float: left; width:130px; height:130px; padding:2px 3px 0 3px;}
+.result_layer {position:relative; float:left; top:-7px; border-top:2px solid #555555; border-right:1px dashed #555555; left:8px; width:360px; height:auto; overflow:hidden; padding:5px 10px 5px 5px; }
+.result_layer_cannotuse {position:relative; float: left; border-style: solid; border-width: 1px; width:350px; height:auto; overflow:hidden; padding:5px; background:#000; opacity:.3; filter:alpha(opacity:30);}
+.full_title, .preview_cut_title { position:relative; display:none; }
+.cut_title { position:relative; display:inline; }
+.preview_full_title { position:relative; display:inline; z-index:2; font-size:16pt !important; }
+.preview_movie { position:relative; clear:both; display:inline; float:left; margin:0 10px 0 0;}
+.item_controller { position:relative; text-align:right; margin:5px 0 0 0; padding:0; }
+.preview_controller { position:relative; text-align:right; z-index:2; }
+.item_infolist { position:relative; list-style: none;  margin:0; padding:0px; }
+.preview_item_infolist { position:relative; display:inline; z-index:2; list-style: none; padding:0; _left:-12px;}
+*:first-child+html .preview_item_infolist { left:-12px; }
+.preview_video_link, .insert_video_link, .insert_link_link { position:relative; margin-right:5px;  margin-bottom:5px; padding:0px;}
+.item_infos { position:relative; display:inline; margin-bottom:5px; _font-size:10pt;}
+*:first-child+html .item_infos { line-height:14px;}
+.pagebtn { top:-30px; left:600px; margin:0px 0px -30px 5px;  }
+#size_select { position:relative;  margin:0; padding:0; z-index:3; }
+#bottom_info { position:relative; display:block; top:-25px; left:250px; margin:0 0 -25px 0; padding:0; }

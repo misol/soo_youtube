@@ -1,0 +1,80 @@
+<!--%import("popup.js")-->
+<!--%import("../lang")-->
+<style type="text/css" media="all"> @import "./modules/editor/components/soo_youtube/tpl/{$design}"; </style>
+{@Context::setBrowserTitle($component_info->title);}
+<script language="javascript" type="text/javascript">//<![CDATA[
+<!--
+var no_result="{$lang->msg_no_result}";
+var soo_msg_close = "{$lang->soo_msg_close}";
+var soo_msg_total="{$lang->soo_msg_total}";
+var soo_msg_result_num="{$lang->soo_msg_result_num}";
+var soo_msg_nextpage="{$lang->soo_msg_nextpage}";
+var soo_msg_beforepage="{$lang->soo_msg_beforepage}";
+var soo_msg_insert="{$lang->soo_msg_insert_all}";
+var soo_msg_insert_linkonly="{$lang->soo_msg_insert_linkonly}";
+
+var soo_view_count = '{$lang->readed_count}';
+var soo_view_score = '{$lang->soo_sort_rate}';
+var soo_tag = '{$lang->tag}';
+var soo_domain = '{$lang->domain}'
+var author = '{$lang->author}';
+var regdate = '{$lang->regdate}';
+var last_update = '{$lang->last_update}';
+var play_time = '{$lang->soo_playtime}';
+var pre_view = '{$lang->cmd_preview}';
+var go_doc = '{$lang->soo_godoc}';
+var size_select = '{$lang->size_select}';
+
+//-->
+//]]></script>
+<div id="popHeadder">
+	<h1>{$component_info->title}</h1>
+</div>
+<form action="./" method="get" onSubmit="soo_search(); return false;" id="form">
+<div id="popupBody">
+	<table border="0">
+	  <tr valign="top">
+		<td>
+		  <div class="search">
+			<table border="0">
+			  <tr>
+				<td>
+				  <select size="1" id="site"<!--@if(!$soo_daum_api_key)-->style="display:none;"<!--@end-->>
+					  <option value="youtube">Youtube</option>
+<!--@if($soo_daum_api_key)-->
+					  <option value="daum">Daum</option>
+<!--@end-->
+				  </select>
+				  <select size="1" id="sort">
+					  <option value="relevance">{$lang->soo_sort_sim}</option>
+					  <option value="published">{$lang->soo_sort_published}</option>
+<!--@if(!$soo_daum_api_key)-->
+					  <option value="viewCount">{$lang->soo_sort_viewCount}</option>
+					  <option value="rating">{$lang->soo_sort_rating}</option>
+<!--@end-->
+				  </select>
+					<input type="text" class="inputTypeText" id="query" value="" /></td>
+				<td><span class="btn"><input type="submit" value="{$lang->cmd_search}" /></span></td>
+			  </tr>
+			</table>
+		  </div>
+		  <div id="results">
+			<div class="result_list_box" id="result_list_layer">{$lang->about_soo_result_use}</div>
+			<div class="result_view" id="result_view_layer">
+
+			  <img id="youtube_logo" alt="'Youtube video search' is powered by Youtube API" src="http://www.youtube.com/img/pic_youtubelogo_123x63.gif" width="123" height="63" />
+<!--@if($soo_daum_api_key)-->
+			  <br /><span id="daum_api">'Daum video search' is powered by Daum API.</span>
+<!--@end-->
+			</div>
+		  </div>
+		  <div id="soo_result_info"></div>
+		</td>
+	  </tr>
+	</table>
+</div>
+</form>
+<div id="popFooter" class="tCenter">
+	<span class="btn"><a href="#" onclick="window.close(); return false;" class="btn">{$lang->cmd_close}</a></span>
+	<span class="btn"><a href="#" onclick="winopen('./?module=editor&amp;act=dispEditorComponentInfo&amp;component_name={$component_info->component_name}','ComponentInfo','left=10,top=10,width=10,height=10,resizable=no,scrollbars=no,toolbars=no');return false;" class="button">{$lang->about_component}</a></span>
+</div>
