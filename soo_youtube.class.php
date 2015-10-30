@@ -1,9 +1,8 @@
 <?php
 	/**
 	 * @class	soo_youtube
-	 * @author misol(김민수) <misol@korea.ac.kr>
+	 * @author misol(김민수) <misol.kr@gmail.com>
 	 * @brief	비디오 검색 컴포넌트
-	 * Copyright (C) Kim,Min-Soo.
 	 **/
 class soo_youtube extends EditorHandler {
 	var $editor_sequence = '0';
